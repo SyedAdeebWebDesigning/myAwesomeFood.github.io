@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% block title %}
+    ACCOUNT
+{% endblock title %}
+{% block body %}    
+<form class = "container py-2 my-4" method = "POST" style = "background-color: #fff; width: 400px; border-radius: 10px;"> {% csrf_token %}
+    
+    <!-- Email input -->
+    <div class="form-outline my-4">
+        <h3 class="text-center">Sign-In</h3>
+      <label class="form-label" for="form2Example1">Email address</label>
+      <input type="email" id="email" name="email" placeholder="someone@email.com" class="form-control"> </input>
+    </div>
+  
+    <!-- Password input -->
+    <div class="form-outline mb-4">
+      <label class="form-label" for="form2Example2">Password</label>
+      <input type="password" id="password" name="password" placeholder="Enter your password" class="form-control"> </input>
+    </div>
+  
+    <!-- 2 column grid layout for inline styling -->
+    <div class="row mb-4">
+      <div class="col d-flex justify-content-center">
+        <!-- Checkbox -->
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" value="" id="form2Example34" checked />
+          <label class="form-check-label" for="form2Example34"> Remember me </label>
+        </div>
+      </div>
+  
+      <div class="col">
+        <!-- Simple link -->
+        <a href="#!">Forgot password?</a>
+      </div>
+    </div>
+  
+    <!-- Submit button -->
+    <center><a href="/" class = "text-white bg-primary align-items-center px-5 py-2" style = "text-decoration: none; border-radius: 10px; width: 100%;"> Sign in </a></center> <br>
+  
+    <!-- Register buttons -->
+    <div class="text-center">
+      <p>Not a member? <a href="/register">Register</a></p>
+      <p>or sign up with:</p>
+      <button type="button" class="btn btn-primary btn-floating mx-1">
+        <i class="fa fa-facebook"></i>
+      </button>
+  
+      <button type="button" class="btn btn-primary btn-floating mx-1">
+        <i class="fa fa-google"></i>
+      </button>
+  
+      <button type="button" class="btn btn-primary btn-floating mx-1">
+        <i class="fa fa-twitter"></i>
+      </button>
+  
+      <button type="button" class="btn btn-primary btn-floating mx-1">
+        <i class="fa fa-github"></i>
+      </button>
+    </div>
+  </form>
+{% endblock body %} 

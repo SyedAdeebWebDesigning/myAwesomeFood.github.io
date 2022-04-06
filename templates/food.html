@@ -1,0 +1,744 @@
+{% extends 'base.html' %} {% block title %} FOOD {% endblock title %} 
+{% block body %}
+<section class="pt-5 pb-5">
+  {% comment %} Card Carousel {% endcomment %}
+  <style>
+    img {
+      max-height: 200px;
+    }
+  </style>
+
+  <div class="container">
+    <h3
+      class="text-center text-uppercase bg-black text-white"
+      style="border-radius: 30px"
+    >
+      Select From Various Categories
+    </h3>
+    <div class="row">
+      <div class="col-6">
+        <h3 class="mb-3">Starters</h3>
+      </div>
+      <div class="col-6 text-right">
+        <a
+          class="btn btn-dark text mb-3 mr-1"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators2"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        <a
+          class="btn btn-dark text mb-3"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators2"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div
+          id="carouselExampleIndicators2"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://i0.wp.com/www.cookingfromheart.com/wp-content/uploads/2017/06/Hara-Bhara-Kabab-2.jpg?fit=1024%2C683"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Hara Bhara Kabab</h4>
+                      <p class="card-title">Price: ₹200</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.N-TU3TkmdnDqRzgUYDU6QwHaE8?w=204&h=136&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Paneer Tikka</h4>
+                      <p class="card-title">Price: ₹150</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.aOUdEJVX217stNoWincCIQHaE8?w=290&h=193&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Samosa</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.A7AR5rS8fcp2OSZcTTxXFAHaE7?pid=ImgDet&rs=1"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Spring Rolls</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/R.0e50b654bcb326cad7426ef92668cd74?rik=kjsyzvexM%2b1jnQ&riu=http%3a%2f%2fwww.bhg.com.au%2fmedia%2f10369%2fam-garlic-bread-08.jpg&ehk=jv%2fmbHUc%2ba%2frEAlPqcaV%2bRoYDZR05MabCP1Gs1WhTQM%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Garlic Bread</h4>
+                      <p class="card-title">Price: ₹150</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.Aj6bkdMpyJMmnSHvuM_6gwHaE8?w=265&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Momos</h4>
+                      <p class="card-title">Price: ₹90</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.Y1vDqPuUzHjBstsX5A7bCQHaE8?w=266&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Chicken Tikka</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.N4MaaAszt4MQTS2YLBeL7gHaFa?w=259&h=189&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Bread Upma</h4>
+                      <p class="card-title">Price: ₹20</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.TFAkv-k8ZUQPkKidwO-FigHaEK?w=300&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Onion Rings</h4>
+                      <p class="card-title">Price: ₹20</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-5 pb-5">
+  <div class="container">
+    <h3
+      class="text-center text-uppercase bg-black text-white"
+      style="border-radius: 30px"
+    ></h3>
+    <div class="row">
+      <div class="col-6">
+        <h3 class="mb-3">Main</h3>
+      </div>
+      <div class="col-6 text-right">
+        <a
+          class="btn btn-dark text mb-3 mr-1"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators3"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        <a
+          class="btn btn-dark text mb-3"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators3"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div
+          id="carouselExampleIndicators3"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.zpS0uo9uPOjDWxQK6CRBwgHaEK?pid=ImgDet&rs=1"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Butter Chicken</h4>
+                      <p class="card-title">Price: ₹500</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.jHjyERPitdx6dAisKxY8wwEyDM?pid=ImgDet&rs=1"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Palak Paneer</h4>
+                      <p class="card-title">Price: ₹500</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://media.istockphoto.com/photos/flames-frying-chicken-on-the-grill-picture-id178280137?k=6&m=178280137&s=170667a&w=0&h=1doSr__JxjKvQY0Tg_e-CoRqtrvSV22Of3HNcfVObzI="
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Grilled Chicken</h4>
+                      <p class="card-title">Price: ₹450</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.VIkhrIvESFWLrSSBB3CG0gHaEK?w=318&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Chilli Chicken</h4>
+                      <p class="card-title">Price: ₹500</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.2rubt7oRrm9ukL2Px8ku6gHaEK?w=296&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Chicken Biryani</h4>
+                      <p class="card-title">Price: ₹150</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://sodelicious.recipes/wp-content/uploads/2019/04/curry-recipes-e1554713783550.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Curry</h4>
+                      <p class="card-title">Price: ₹500</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.SWLHS3G3MFv1hSUsPsZ6MAHaEm?w=273&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Choley Bhature</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://fthmb.tqn.com/se4SChJbt4-L7_yM8s4imEx7SMQ=/1720x1146/filters:fill(auto,1)/Malai-Kofta-GettyImages-640045270-58d0064d5f9b581d72be95b6.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Malai Kofta</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/R.eb4892e14db6495e819144226bcb0e33?rik=MSVDTyv%2fl9QdKg&riu=http%3a%2f%2fbrokeassstuart.com%2fwp-content%2fpictsnShit%2f2016%2f03%2fcorned-beef.jpg&ehk=IHRrbxHKZiVtz7klVwuf22u3INLw7ctjlLvtA9ZyrWs%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Corned Beef</h4>
+                      <p class="card-title">Price: ₹90</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-5 pb-5">
+  <div class="container">
+    <h3
+      class="text-center text-uppercase bg-black text-white"
+      style="border-radius: 30px"
+    ></h3>
+    <div class="row">
+      <div class="col-6">
+        <h3 class="mb-3">Deserts</h3>
+      </div>
+      <div class="col-6 text-right">
+        <a
+          class="btn btn-dark text mb-3 mr-1"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators4"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        <a
+          class="btn btn-dark text mb-3"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators4"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div
+          id="carouselExampleIndicators4"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/R.1fb81084fd5947d208f6e0d5653d5f49?rik=Atun6GLP%2fIftbw&riu=http%3a%2f%2fimages.huffingtonpost.com%2f2015-07-29-1438194128-3791769-national_cheesecake_day.jpg&ehk=CI2%2bQambyqjfSsTq7pffBE%2bWatR6RDjoxZGHj2qQQKs%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Cheese Cake</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://www.bakerycity.com/wp-content/uploads/2020/09/carolyn-christine-PzRF6Xb5aAA-unsplash.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Cup Cake</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.XRLI71C9Bc2Jbfz0oAHg4QHaEK?w=303&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Jeli-O</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.N8DrSv5i_qEYEAFL0-ebcAHaEK?w=314&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Carrot Cake</h4>
+                      <p class="card-title">Price: ₹200</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.XDKu-5JIg4-0FfEmJ3goLwHaE8?w=236&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Apple Pie</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/R.d08a11eca8cd6e59349b4e711e0d1c61?rik=p5U1TZqSXFzKMw&riu=http%3a%2f%2fwww.thatslife.com.au%2fmedia%2f5266%2ficecream3_landscape.jpg&ehk=I4Q9y%2bvZmr7UyJyWTHLddzh5Vt8F%2b2b02IKOcg0GwkQ%3d&risl=&pid=ImgRaw&r=0"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Ice-Creams</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.5JxYwUVpvC83ClNGA7h0rAHaE7?w=274&h=182&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Brownies</h4>
+                      <p class="card-title">Price: ₹60</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.FoSsAryPKrW4L4jPhvhbdAHaE8?w=204&h=136&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Chocolate Chip</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.reZip6NDJzYClgHpa1rjjAHaE7?w=277&h=184&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Pastries</h4>
+                      <p class="card-title">Price: ₹100</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="pt-5 pb-5">
+  <div class="container">
+    <h3
+      class="text-center text-uppercase bg-black text-white"
+      style="border-radius: 30px"
+    ></h3>
+    <div class="row">
+      <div class="col-6">
+        <h3 class="mb-3">Drinks</h3>
+      </div>
+      <div class="col-6 text-right">
+        <a
+          class="btn btn-dark text mb-3 mr-1"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators5"
+          role="button"
+          data-slide="prev"
+        >
+          <i class="fa fa-arrow-left"></i>
+        </a>
+        <a
+          class="btn btn-dark text mb-3"
+          style="border-radius: 30px"
+          href="#carouselExampleIndicators5"
+          role="button"
+          data-slide="next"
+        >
+          <i class="fa fa-arrow-right"></i>
+        </a>
+      </div>
+      <div class="col-12">
+        <div
+          id="carouselExampleIndicators5"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP._mw_IihiTZKgeB1zUnq10AHaE7?w=265&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Negroni</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.FYBGK-R_Tn_NN3XmaHkxiQHaE7?w=259&h=180&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Margrita</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.UZGTvhAMdKBaHot-UaptowHaE8?w=276&h=184&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Manhattan</h4>
+                      <p class="card-title">Price: ₹20</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.JM2QZ8lKi46ymQNvzDA-5gHaDN?w=319&h=151&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Martini</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://fthmb.tqn.com/_fkxkh4OkOFbgYdJeTics593Gz8=/960x0/filters:no_upscale()/lemon-cocktail-175602377-59889a17aad52b0010e59feb.jpg"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Gimlet</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.fXgUqvJVHkolyaRmT0NscwHaE8?w=294&h=196&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Old Fashioned</h4>
+                      <p class="card-title">Price: ₹50</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="row">
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://th.bing.com/th/id/OIP.qUPKr4TfLSWsCyofmMM_BwHaE7?w=288&h=192&c=7&r=0&o=5&pid=1.7"
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Mint Julip</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://media.istockphoto.com/photos/cold-tequila-sunrise-cocktail-picture-id1129151917?k=6&m=1129151917&s=170667a&w=0&h=P0dQRiu3bLiY8xXF5JkplYisCpP8pE6lRetZmAu89fo="
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Tequilla Sunrise</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-4 mb-3">
+                  <div class="card">
+                    <img
+                      class="img-fluid"
+                      alt="100%x280"
+                      src="https://media.istockphoto.com/photos/peach-cocktail-fizz-ice-tea-with-fresh-rosemary-and-lime-blue-copy-picture-id681275770?k=6&m=681275770&s=170667a&w=0&h=vET5nHLQozLhAE0gqF_1SwzVkx4gUivjBvvE8unH38k="
+                    />
+                    <div class="card-body">
+                      <h4 class="card-title">Fizz</h4>
+                      <p class="card-title">Price: ₹10</p>
+                      <div class="btn btn-dark text" onclick = "greet()" onclick = "ChangeText()"> Buy Now</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  {% comment %} End of Card Carousel {% endcomment %}
+</section>
+<script>
+
+  let greet = () => {
+    alert('Thanks for ordering!');
+  }
+  
+</script>
+{% endblock body %}
